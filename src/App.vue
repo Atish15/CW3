@@ -80,8 +80,10 @@ export default {
     }
   },
   components:{Lesson, Checkout},
-  created:async function(){
-
+  created:function(){
+    if("serviceWorker" in navigator){
+      navigator.serviceWorker.register("service-worker.js");
+    }
     //  fetch("http://localhost:3000/collections/products")
    let webstore=this;
     fetch("https://courseworkapp-env.eba-z4p932sy.eu-west-2.elasticbeanstalk.com/collections/products")
@@ -94,9 +96,7 @@ export default {
 
         });
 
-    if("serviceWorker" in navigator){
-      navigator.serviceWorker.register("service-worker.js");
-    }
+
 
 
   },
