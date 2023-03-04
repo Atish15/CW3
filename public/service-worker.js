@@ -1,4 +1,4 @@
-let cacheName = "store-c1";
+let cacheName = "store-c2";
 let cacheFiles = [
   "index.html",
   "assets",
