@@ -1,8 +1,10 @@
 let cacheName = "store-c1";
 let cacheFiles = [
   "index.html",
-  "assets",
-  "fav.ico",
+  "src/main.js",
+  "src/App.vue",
+  "src/components/Lesson.vue",
+  "src/components/Checkout.vue",
   "images/maths.png",
   "images/computer.png",
   "images/eng.png",
