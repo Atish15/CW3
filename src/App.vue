@@ -62,7 +62,7 @@ export default {
       serverURL:'https://courseworkapp-env.eba-z4p932sy.eu-west-2.elasticbeanstalk.com/collections/products',
       testConsole:false,
       currentComponent:'Lesson',
-      baseUrl:'../src/assets/',
+      baseUrl:'',
       cartinfo: 'Go To Cart',
       products: [],
       cart: [],
