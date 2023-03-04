@@ -1,0 +1,20 @@
+{
+    "name": "Education Store",
+    "short_name": "EduStore",
+    "description": "Online lessons Store",
+    "icons": [
+    {
+    "src": "images/logo-32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+    },
+    {
+    "src": "images/logo-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+    }
+    ],
+    "start_url": "/CW3/index.html",
+    "display": "fullscreen",
+    "background_color": "#260bca"
+}
