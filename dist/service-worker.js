@@ -1,7 +1,9 @@
-let cacheName = "store-c2";
+let cacheName = "store-c3";
 let cacheFiles = [
   "index.html",
-  "assets",
+  "src/App.vue",
+  "src/components/Checkout.vue",
+  "src/components/Lesson.vue",
   "images/maths.png",
   "images/computer.png",
   "images/eng.png",
@@ -10,26 +12,16 @@ let cacheFiles = [
   "images/pound.png",
   "images/sports.png",
 ];
+
 self.addEventListener("install", function (e) {
   console.log("[Service Worker] Install");
   e.waitUntil(
       caches.open(cacheName).then(function (cache) {
         console.log("[Service Worker] Caching files");
-
-        cacheFiles.forEach(cacheFile=>{
-          try{
-
-            cache.add(cacheFile);
-          }
-          catch{
-            console.log(cacheFile);
-          }
-        })
-        return cache;
+        return cache.addAll(cacheFiles);
       })
   );
 });
-
 self.addEventListener("fetch", function (e) {
   e.respondWith(
       caches.match(e.request).then(function (cachedFile) {
