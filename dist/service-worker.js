@@ -5,13 +5,13 @@ let cacheFiles = [
   "src/App.vue",
   "src/components/Lesson.vue",
   "src/components/Checkout.vue",
-  "src/assets/images/maths.png",
-  "src/assets/images/computer.png",
-  "src/assets/images/eng.png",
-  "src/assets/images/music.png",
-  "src/assets/images/physics.png",
-  "src/assets/images/pound.png",
-  "src/assets/images/sports.png",
+  "images/maths.png",
+  "images/computer.png",
+  "images/eng.png",
+  "images/music.png",
+  "images/physics.png",
+  "images/pound.png",
+  "images/sports.png",
 ];
 self.addEventListener("install", function (e) {
   console.log("[Service Worker] Install");
