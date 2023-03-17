@@ -161,13 +161,13 @@ export default {
     cartout: function () {
       if (this.currentComponent=="Lesson") {
        this.currentComponent="Checkout";
-        this.cartinfo = "Go To Cart";
+        this.cartinfo = "Go To Home";
         this.showcart=true;
 
       }
       else {
         this.currentComponent="Lesson";
-        this.cartinfo = "Go To Home";
+        this.cartinfo = "Go To Cart";
         this.showcart=false;
 
       }
